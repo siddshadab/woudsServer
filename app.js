@@ -26,12 +26,6 @@ const liveToLive = require('./routes/LiveToLive');
 
 let url = "";
 
-// set the view engine to ejs
-app.set('view engine', 'ejs');
-
-// make express look in the public directory for assets (css/js/img)
-app.use(express.static(__dirname + '/public'));
-
 
 //Check env variable
 if(process.env.ENV === "dev"){
