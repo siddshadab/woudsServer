@@ -26,6 +26,12 @@ const liveToLive = require('./routes/LiveToLive');
 
 let url = "";
 
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
+// make express look in the public directory for assets (css/js/img)
+app.use(express.static(__dirname + '/public'));
+
 
 //Check env variable
 if(process.env.ENV === "dev"){
@@ -88,9 +94,10 @@ app.use('/api/v1/liveToLive',liveToLive);
 
 
 
+var port = process.env.PORT || 8080;
 
-app.listen(config.APP.PORT, () => {
-    console.log(`listening on port ${config.APP.PORT}`);
+app.listen(port, () => {
+    console.log(`listening on port ${port}`);
 });
 
 // // Initialize Global Error Handlers
