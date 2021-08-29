@@ -23,6 +23,7 @@ var errorHandler = require("./utils/errorHandler.js");
 var config = require("./config");
 var logger = require("./utils/logger.js");
 const liveToLive = require('./routes/LiveToLive');
+const biddingChats = require('./routes/BiddingChats');
 
 let url = "";
 
@@ -83,6 +84,7 @@ app.use('/api/v1/signup', signUp);
 app.use('/api/v1/logout', logOut);
 app.use('/api/v1/adpost',adPost);
 app.use('/api/v1/liveToLive',liveToLive);
+app.use('/api/v1/biddingChats',biddingChats);
 
 
 

@@ -7,5 +7,7 @@ router.route('/')
     .post(services.postSignIn)
     router.route('/mobileCheck')
     .post(services.postMobileCheck)
+    router.route('/getAllUsersonGrpCd')
+    .get(services.getAllUsers)
 
 module.exports = router;
