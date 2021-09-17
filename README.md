@@ -1,5 +1,5 @@
 
-## Shop Supplier for mahine reselling and finding freelance service for machine service made on JavaScript Technologies
+## Chicken selling backend service made on JavaScript Technologies
  
  * <a href="https://reactjs.org/" target="_blank">React.js</a>
  * <a href="http://expressjs.com/" target="_blank">Node (Express.js)</a> 
